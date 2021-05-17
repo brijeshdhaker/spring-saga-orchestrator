@@ -39,3 +39,7 @@ build/
 .vscode/
 /utilities/nbproject/
 /common-utilities/nbproject/
+/orchestrator-service/jars/
+/inventory-service/jars/
+/order-service/jars/
+/payment-service/jars/
