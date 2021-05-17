@@ -8,6 +8,7 @@
 ## Directories
 database
 target/
+jars/
 
 ### STS ###
 .apt_generated
