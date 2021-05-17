@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>sample.multimodule.demos</groupId>
+    <artifactId>spring-saga-orchestrator</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>spring-saga-orchestrator</name>
+    <description>spring-saga-orchestrator</description>
+
+    <modules>
+        <module>common-utilities</module>
+        <module>inventory-service</module>
+        <module>payment-service</module>
+        <module>order-service</module>
+        <module>orchestrator-service</module>
+    </modules>
+
+</project>
+

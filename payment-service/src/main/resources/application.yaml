@@ -1,0 +1,64 @@
+#
+# Application Profiles.
+# 
+---
+#
+spring:
+  application:
+    name: payment-service
+server:
+  port: 8092
+logging:
+  level:
+    root: info
+#
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect  
+    hibernate:
+      ddl-auto: update
+      use-new-id-gnerator-mappings: false
+    properties:
+      hibernate:
+        show-sql: true
+        use-sql-comments: true
+        format-sql: true
+        type: info
+  datasource:
+    name: PAYMENT
+    username: sa
+    password:
+    driverClassName: org.h2.Driver  
+    url: jdbc:h2:mem:PAYMENT
+#    url: jdbc:h2:file:D:/apps/hostpath/databases/PAYMENT;AUTO_SERVER=true;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;
+#
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        trace: false
+        web-allow-others: true
+#
+  liquibase:
+    enabled: false
+#
+---
+#
+# local profile
+#
+---
+#
+spring:
+  profiles: local  
+
+#
+---
+#
+# docker profile
+#
+---
+#
+spring:
+  profiles: docker  
+
+#
